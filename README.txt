@@ -9,7 +9,7 @@ Website: www.mediamilan.com
 3. The rows are created dynamically with dynamic 'name' for the input fields.
 4. On reaching 10 rows an alert msg pops up alerting "Reached Maximum Rows!" after which no rows are added. This is customisable.
 5. The only way to add new rows after reaching the set limit is to delete already created ones.
-5. The .js file contains the script to add and delete new rows from HTML table.
+6. The .js file contains the script to add and delete new rows from HTML table.
 
 
 **** DEMO ****
