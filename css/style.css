@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -------------- END CSS RESET -------------- */
+
+/* -- START OOCSS -- */
+
+header, footer, article, section, nav, menu, hgroup {  
+	display: block;  
+}
+
+.left {
+	float:left;	
+}
+
+.right {
+	float:right;
+}
+
+.clear {
+	clear:both
+}
+
+a.mm {
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	background:url(http://mediamilan.com/wp-content/themes/mm_v2/images/newsletter/mm_wBG.png) left top no-repeat;
+	width:30px;
+	height:30px;
+	display:block;
+}
+
+/* -- END OOCSS -- */
+
+body {
+	background: url(../images/bg_grey.jpg) repeat;
+	color:#606060;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#page_container {
+	width: 80%;
+	margin: 5em auto 0;
+}
+
+.form_container {
+	background: #ffffff;
+	padding: 20px;
+	border: 1px dashed #BEBEBE;
+	overflow: hidden;
+}
+
+.form_container h3 {
+	font-size: 20px;
+	margin: 0 0 10px 0;
+	color: #909090;
+}
+
+#expense_table {
+	width: 100%;
+	margin: 0 0 1em 0;
+}
+
+#expense_table td, #expense_table th{
+	border: 1px solid #cccccc;
+	text-align: left;
+}
+
+#expense_table th{ 
+	padding: .5em .3em;
+	background: #ececec;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+#expense_table td {
+	padding: 0.3em;
+}
+
+#add_ExpenseRow {
+	cursor: pointer;
+	background: #dbe8bf url(../images/add_row.png) 6px 4px no-repeat;
+	padding: 3px 4px 3px 25px;
+	border: 1px solid #a3c261;
+}
+
+#add_ExpenseRow:hover {
+	background-color: #c5d5a3;
+}
+
+#expense_table .del_ExpenseRow {
+	cursor: pointer;
+	background: url(../images/delete_row.png) 5px 4px no-repeat;
+	width: 28px;
+	height: 26px;
+	border: 1px solid #e26c6c;
+	text-indent: -9999px;
+}
+
+#expense_table .del_ExpenseRow:hover {
+	background-color: #e07171;
+}
+
+footer {
+	position: fixed;
+	bottom: 2em;
+	left: 5%;
+}
+
+footer p{
+	font-size: .75em;
+	text-align: center;
+}
+
+/* -- START MAIN CSS -- */
