@@ -4,7 +4,7 @@ $(function(){
 	$get_lastID = function(){
 		var $id = $('#expense_table tr:last-child td:first-child input').attr("name");
 		$lastChar = parseInt($id.substr($id.length - 2), 10);
-		console.log('GET id: ' + $lastChar + ' | $id :'+$id);
+		//console.log('GET id: ' + $lastChar + ' | $id :'+$id);
 		$lastChar = $lastChar + 1;
 		$newRow = "<tr> \
 					<td><input type='text' name='reg_no_0"+$lastChar+"' maxlength='255' /></td> \
@@ -20,8 +20,8 @@ $(function(){
 	}
 	
 	// ***** -- START ADDING NEW ROWS
-	$('#add_ExpenseRow').live("click", function(){ 
-		if($lastChar <= 9){
+	$('#add_ExpenseRow').live("click", function(){
+		if($('#expense_table tr').size() <= 9){
 			$get_lastID();
 			$('#expense_table tbody').append($newRow);
 		} else {
